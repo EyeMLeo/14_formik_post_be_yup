@@ -1,0 +1,32 @@
+.main-header {
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  background-color: rgb(202, 202, 202);
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+.nav-link.currentPage {
+  font-weight: bold;
+}
+
+.inputErroMsg {
+  color: tomato;
+}
+
+.inputErrorField {
+  background-color: rgb(255, 207, 198);
+  border-color: tomato;
+  color: black;
+}

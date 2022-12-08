@@ -1,0 +1,163 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "image": "https://github.com/MariusCodeAcademy/posts-rest-json-server/blob/main/assets/html.jpg?raw=true",
+      "title": "What is HTML?",
+      "body": "HTML is a programming language that stands for Hypertext Markup Language. This is a relatively simplistic yet powerful programming language that allows web developers and website owners to create the structure of their websites. If you want a sentence in a blog post to receive a bold font, HTML could be used to achieve this. When using this system, any text files can be tagged for effects, graphics, fonts, or colors. If you've never used any kind of programming language in the past, HTML would be a great place to start. Keep in mind that HTML markups are enhanced by CSS and JavaScript, which is why it's recommended that you learn this programming language first.",
+      "archived": false,
+      "userId": 9,
+      "tags": ["front-end", "web-development"],
+      "reactions": 2
+    },
+    {
+      "id": 2,
+      "image": "https://github.com/MariusCodeAcademy/posts-rest-json-server/blob/main/assets/css.png?raw=true",
+      "title": "What is CSS?",
+      "body": "CSS is a style sheet language that's focused almost entirely on improving the presentation of HTML elements. While CSS is a static programming language, it can be used to make your website appear visually pleasing and modern. If you want your website to have a sleek and stylish design, CSS is the programming language to use. With a basic understanding of CSS, you can make changes to the overall look and feel of your website, which is useful when you want to match the appearance of your website with the aesthetics of your brand.",
+      "archived": false,
+      "userId": 13,
+      "tags": ["front-end", "web-development"],
+      "reactions": 2
+    },
+    {
+      "id": 3,
+      "image": "https://github.com/MariusCodeAcademy/posts-rest-json-server/blob/main/assets/js.jpg?raw=true",
+      "title": "What is JavaScript?",
+      "body": "JavaScript is among the most important programming languages for website owners who want to make their site more interactive, which makes this the most complex of the three standard programming languages in this article. While HTML provides the structure for a website and CSS allows you to control the presentation of a site, the JavaScript programming language gives you the tools that you need to alter the behavior of different elements that are found on a website page. With this tool, you can add a layer of interactivity to the CSS and HTML elements on your website, which is highly recommended if you want your website to appeal to the modern customer.",
+      "archived": false,
+      "userId": 32,
+      "tags": ["front-end", "web-development", "javascript"],
+      "reactions": 5
+    },
+    {
+      "id": 4,
+      "image": "https://picsum.photos/id/1006/600/800",
+      "title": "All he wanted was a candy bar.",
+      "body": "All he wanted was a candy bar. It didn't seem like a difficult request to comprehend, but the clerk remained frozen and didn't seem to want to honor the request. It might have had something to do with the gun pointed at his face.",
+      "archived": false,
+      "userId": 12,
+      "tags": ["mystery", "english", "american"],
+      "reactions": 1
+    },
+    {
+      "id": 5,
+      "image": "https://picsum.photos/id/1012/600/800",
+      "title": "Hopes and dreams were dashed that day.",
+      "body": "Hopes and dreams were dashed that day. It should have been expected, but it still came as a shock. The warning signs had been ignored in favor of the possibility, however remote, that it could actually happen. That possibility had grown from hope to an undeniable belief it must be destiny. That was until it wasn't and the hopes and dreams came crashing down.",
+      "archived": false,
+      "userId": 41,
+      "tags": ["crime", "mystery", "love"],
+      "reactions": 2
+    },
+    {
+      "title": "My first Post",
+      "reactions": 10,
+      "archived": true,
+      "userId": 15,
+      "body": "Something about My first Post",
+      "tags": ["web", "front end", "html"],
+      "id": 6
+    },
+    {
+      "title": "My second Post",
+      "reactions": 10,
+      "archived": true,
+      "userId": 15,
+      "body": "Something about My second Post",
+      "tags": ["web", "front end", "html"],
+      "id": 8
+    },
+    {
+      "title": "My first Post 11111",
+      "reactions": 10,
+      "archived": false,
+      "userId": 15,
+      "body": "Something about My first Post",
+      "tags": ["html"],
+      "image": "https://picsum.photos/id/1006/600/800",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "name": "James Bond 007",
+      "town": "Birmingam",
+      "age": "29",
+      "id": 1,
+      "archived": false
+    },
+    {
+      "name": "Jill Krown",
+      "town": "Dublin",
+      "age": "34",
+      "id": 2,
+      "archived": false
+    },
+    {
+      "id": 3,
+      "name": "Mike",
+      "age": 31,
+      "town": "Capetown",
+      "archived": false
+    },
+    {
+      "id": 4,
+      "name": "Serbentautas",
+      "age": 18,
+      "town": "Neveronys",
+      "archived": false
+    },
+    {
+      "name": "Serbentautas Bordiuras",
+      "age": 18,
+      "town": "Neveronys",
+      "id": 5,
+      "archived": true
+    },
+    {
+      "name": "Serbentautas Bordiuras",
+      "town": "Serbija",
+      "age": 35,
+      "id": 6,
+      "archived": true
+    },
+    {
+      "name": "Serbentautas",
+      "age": 18,
+      "town": "Neveronys",
+      "id": 7,
+      "archived": false
+    },
+    {
+      "name": "Lenteja",
+      "town": "Neveronys",
+      "age": "25",
+      "id": 8,
+      "archived": true
+    },
+    {
+      "name": "Grafas Kazkas",
+      "town": "Kaunas",
+      "age": "35",
+      "archived": false,
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "Cool article!!! about html",
+      "date": "2015-07-01T00:00:00",
+      "author": "John Smith",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "text": "great info about css",
+      "date": "2015-07-01T00:00:00",
+      "author": "Jill Smith",
+      "postId": 3
+    }
+  ]
+}
