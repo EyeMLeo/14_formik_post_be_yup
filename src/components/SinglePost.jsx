@@ -27,7 +27,7 @@ function SinglePost(props) {
         ))}
       </ul>
       {/* nuoroda i singlePostPage */}
-      <Link to="/posts/5">Read more</Link>
+      <Link to={`/posts/${p.id}`}>Read more</Link>
       <br />
       <button>Delete post X</button>
     </article>

@@ -23,18 +23,11 @@ function SinglePostPage(props) {
   useEffect(() => {
     // getParams();
 
-    console.log('getPosts() ===', getPosts());
-    getPosts().then((datainJs) => {
-      console.log('datainJs ===', datainJs);
-      setSinglePost(() => datainJs.filter((oneObj) => oneObj.id == postId));
+    getPosts(`http://localhost:8001/posts/${postId}`).then((datainJs) => {
+      setSinglePost(datainJs);
     });
-
-    console.log('singlePost0 ===', singlePost[0]);
-    console.log('singlePost ===', typeof singlePost);
   }, []);
-
-  let p = singlePost[0];
-  console.log('p', p);
+  let p = singlePost;
   return (
     <div>
       <h1>SinglePostPage</h1>
@@ -51,9 +44,9 @@ function SinglePostPage(props) {
             <li key={tag}>{tag}</li>
           ))}
         </ul> */}
-        {/* nuoroda i singlePostPage */}
+        {/* nuoroda i singlePostPage
         <br />
-        <button>Delete post X</button>
+        <button>Delete post X</button> */}{' '}
       </article>
     </div>
   );
