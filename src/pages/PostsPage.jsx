@@ -1,19 +1,34 @@
+import { useEffect } from 'react';
+import { useState } from 'react';
 import SinglePost from '../components/SinglePost';
+import { getPosts } from './../helper/helper';
 
 function PostsPage(props) {
   // 3. PostsPage tik uzsikrovus psl siustis postus is public/db/database.json ir issaugoti state.
-
   // sukurti statee
+  const [postsArr, setPostsArr] = useState([]);
+
   // aprasyti useEffekta kurispasileidzia tik viena kartu sukurus komponenta ([])
-  // getPosts();
+  useEffect(() => {
+    getPosts().then((dataInJs) => {
+      console.log('dataInJs ===', dataInJs);
+      setPostsArr(dataInJs);
+    });
+  }, []);
+
+  // PostsPage sukurti deletePostHandler fn kuri argumentu gauna id to post kuri norima istrinti
+  // iskonsolinti id posto kuri norim istrinti.
+  // turedami id mes siunciam DELETE requesta i /posts/{postId}
+  // jei gaunam sekminga atsakyma parsisiunciam naujausia postu masyvo versija is back end
 
   return (
     <div>
       <h1>PostsPage</h1>
 
-      <p>cia generuosim single card</p>
       <div className='grid'>
-        <SinglePost />
+        {postsArr.map((pObj) => (
+          <SinglePost key={pObj.id} post={pObj} />
+        ))}
       </div>
     </div>
   );
