@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import InputError from './components/InputError';
@@ -21,6 +21,9 @@ function App() {
         </Route>
         <Route path={'/add-post'}>
           <AddPostPage />
+        </Route>
+        <Route path={'/home'} exact>
+          <Redirect to={'/'} />
         </Route>
         <Route path={'/'} exact>
           <HomePage />

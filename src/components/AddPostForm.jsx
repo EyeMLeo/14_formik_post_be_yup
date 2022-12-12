@@ -15,6 +15,7 @@ function AddPostForm(props) {
       tagsStringInput: '',
       tags: [],
       userId: 1,
+      archived: false,
     },
     validationSchema: Yup.object().shape({
       image: Yup.string()
